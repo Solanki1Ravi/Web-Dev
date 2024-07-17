@@ -1,0 +1,9 @@
+1.The display CSS property sets whether an element is treated as a block or inline box
+
+2.inline-block:- Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values
+
+3. Inline:- Displays an element as an inline element.
+    a. In inline we can't set margin-top,padding-top , height and  width of a div
+
+4.Block:- Displays an element as a block element
+

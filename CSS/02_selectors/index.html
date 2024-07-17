@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors in CSS</title>
+    <style>
+
+
+    /* Universal selector */
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: beige;
+    }
+
+
+      /* Element selector */
+      /* h1 {
+        color: red;
+        background-color: burlywood;
+      } */
+
+      /* Class Selector */
+      /* .red{
+        color: yellow;
+        background-color: violet;
+      } */
+
+      /* Id Selector */
+      /* #yellow{
+        background-color:turquoise;
+        color: beige;
+      } */
+
+      /* Group selector */
+
+      h1,h2,h3{
+        color: mediumseagreen;
+      }
+
+
+
+      /* Pseudo selectors */
+
+      a:hover{
+        background-color: magenta;
+        color: red;
+
+      }
+
+
+      /* first child selector */
+      /* div > p{
+        background-color: wheat;
+
+      } */
+
+      div p{
+        background-color: rgb(78, 9, 152);
+
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <h1>About Me</h1>
+    <h2 class="red">Contact Us</h2>
+    <h3 id ="yellow">More about Us</h3>
+    <a href="http://google.com">google</a>
+
+
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae totam dicta modi deleniti? Saepe, sint rem? Magnam aspernatur laborum necessitatibus!</p>
+    </div>
+
+    <div>
+        <article>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem eaque nulla praesentium. Recusandae velit sequi error reiciendis molestiae, vel mollitia corporis, officia est quam iure? Veniam hic suscipit atque odit ex. Amet vero in corporis ullam enim dolor, eaque quis itaque suscipit magni quod voluptatem!</p>
+        </article>
+    </div>
+  </body>
+</html>

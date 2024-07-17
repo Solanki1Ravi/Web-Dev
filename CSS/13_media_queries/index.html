@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(174, 96, 96);
+        box-sizing: border-box;
+      }
+      .cont {
+        display: flex;
+      }
+      .box {
+        border: 2px solid black;
+        margin: 5px;
+        padding: 5px;
+        height: 100px;
+        width: 200px;
+        overflow: auto;
+        max-height: 80vh;
+      }
+      @media (max-width: 455px) {
+        .cont {
+          flex-direction: column;
+          background-color: lightblue;
+
+        }
+      }
+      @media (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+        inventore!
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+        delectus.
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum,
+        excepturi!
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quis!
+      </div>
+    </div>
+  </body>
+</html>

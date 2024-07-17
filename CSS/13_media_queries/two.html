@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Media queries</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            flex-direction:row;
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid black;
+            background-color: red;
+            width: 500px;
+        }
+        .text-cnt{
+            background-color: navajowhite;
+            width: 47%;
+            margin: 5px;
+            padding: 5px;
+
+        }
+        p{
+            border: 2px solid rgb(180, 254, 7);
+        }
+        .img-cnt{
+            background-color: rgb(219, 88, 221);
+            width: 47%;
+            margin: 5px;
+            padding: 5px;
+            
+        }
+        img{
+            width: 200px;
+        }
+        
+        @media (max-width:640px) {
+            .container{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-cnt">
+            <p>Text1</p>
+            <p>Text2</p>
+        </div>
+        <div class="img-cot">
+            <img src="fort.png">
+        </div>
+    </div>
+</body>
+</html>

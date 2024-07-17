@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        p{
+            color:magenta;
+        }
+        .paraOne{
+            color: maroon;
+        }
+        #red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p /*style="color:burlywood"*/ id="red" class="paraOne">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, nemo?
+    </p>
+</body>
+</html>

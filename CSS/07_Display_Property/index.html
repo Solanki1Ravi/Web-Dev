@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .box{
+            
+            border: 2px solid black;
+            display: inline; /*margin-top and paddint-top not work when display is  inline */
+            margin: 10px;
+            padding: 10px;
+            width: 200px;/*width is not work when display is  inline*/
+            height: 1235px;/*height is also not work when display is  inline*/
+
+            
+
+        }
+       
+    
+            
+        .box2{
+            display: inline-block;
+            width: 500px;
+            margin: 10px;
+            padding: 10px;
+            height: 35px;
+        }
+    </style>
+</head>
+<body>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <div class="box box1">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="box box2">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <span class="span span1">Lorem ipsum dolor sit amet.</span>
+    <span class="span span2">Lorem ipsum dolor sit amet.</span>
+</body>
+</html>

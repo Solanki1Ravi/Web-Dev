@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Overflow</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        /* Note: The overflow property only works for block elements with a specified height. */
+        border: 2px solid black;
+        width: 30vw;
+        height: 30vh;
+        /*The overflow is clipped, and the rest of the content will be invisible*/
+        /* overflow: hidden;*/
+
+        /* Similar to scroll, but it adds scrollbars only when necessary */
+        /* overflow: auto; */
+
+        /* scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content */
+        /* overflow:scroll; */
+
+        /* Default. The overflow is not clipped. The content renders outside the element's box */
+        overflow: visible;
+      }
+
+      .firstpara {
+        border: 2px solid black;
+        width: 30vw;
+        height: 30vh;
+        /*
+            The overflow-x and overflow-y properties specifies whether to change the overflow of content just horizontally or vertically (or both):
+
+            overflow-x specifies what to do with the left/right edges of the content.
+
+            overflow-y specifies what to do with the top/bottom edges of the content.
+
+        */
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+        overflow-y: scroll; /* Add vertical scrollbar */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    <div>
+        <p>Lorem ipsum dolor, eaque itaque dolores excepturi! Impedit consequuntur quia aspernatur quod numquam in, perferendis sed. Aliquid animi, nulla sequi recusandae autem tempore qdeleniti Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut illo error magni suscipit, rerum dolorum, consectetur a quaerat fuga eaque impedit eveniet quo nulla molestiae obcaecati omnis nostrum quos ullam laudantium debitis! Officia, doloremque quae omnis repudiandae porro praesentium. Ullam labore ut aperiam assumenda, alias animi ipsam. Sed fugit ratione quidem architecto numquam atque fuga delectus hic velit nihil praesentium magni, dolore ipsum molestiae aliquid quae necessitatibus nostrum, soluta minus fugiat sequi saepe eligendi dolorum nisi? Obcaecati in consequuntur quae accusamus a voluptates labore, corrupti maiores est expedita, dicta laboriosam molestiae assumenda! Tempore quae similique explicabo voluptate modi consectetur consequatur vel fuga iusto enim sapiente deleniti cupiditate eum voluptatem illo sit quisquam quibusdam, sint fugit, necessitatibus laborum iure veritatis. Aliquid ipsum voluptatum mollitia consequuntur harum? Mollitia atque eius numquam quae! Ad cumque architecto aliquid possimus facere alias cupiditate incidunt, quibusdam quas dicta quo sed neque optio dolorem omnis sunt excepturi delectus reiciendis autem doloribus commodi tempora. Sapiente eaque blanditiis natus id odit iusto rem mollitia atque nam quos nobis, sit tempore voluptatem nisi ullam ipsum magnam quia, est necessitatibus. Tempora rem vel saepe molestiae error quidem distinctio laudantium ad modi obcaecati voluptatem asperiores unde tenetur nam eaque exercitationem sed debitis sequi aliquam ipsa architecto, quaerat dolorum voluptate eveniet? Magnam ex nisi consectetur accusantium, beatae exercitationem aliquam ullam quia similique voluptatem explicabo quaerat dicta labore provident a sunt suscipit asperiores molestias eius laboriosam. Assumenda non blanditiis quaerat esse sapiente vero vel ex omnis tempore ipsa aperiam mollitia dicta hic corporis tempora pariatur, enim expedita illum. Labore distinctio deleniti ducimus atque cupiditate nisi hic, magni voluptates illo ex culpa impedit ratione amet, earum iure pariatur. Voluptatum quos voluptatibus labore earum culpa dolorum libero perferendis magnam. Iure, quae porro repellat voluptas fugiat consequuntur placeat veritatis. Architecto consequatur vel at nobis neque. Voluptatem assumenda iste modi? Odio perspiciatis excepturi quibusdam dolorem voluptas sit minima repellat alias ullam voluptate! Alias blanditiis natus, hic repellendus id odit sit sapiente officia eaque, explicabo iste distinctio nulla magnam exercitationem consectetur soluta nemo tempora vel officiis? Quo deserunt maxime doloremque quas beatae minima inventore ratione ipsa facere? Id, impedit iure, distinctio deserunt molestias at corrupti atque, ipsam suscipit recusandae corporis. Possimus fugiat cumque nulla corporis nihil. Ea illo voluptate ipsam deserunt incidunt? Quo iste veniam doloremque vero dolor delectus cumque ea voluptates sapiente maiores iusto, illo voluptatum beatae expedita aliquam explicabo a quas ratione maxime enim pariatur at quasi. Ducimus repellat error architecto, ipsum possimus iste corporis eius temporibus quo, aliquid voluptas qui quibusdam ullam labore eaque itaque laborum expedita quidem corrupti saepe voluptates earum? Non sit in animi cum eveniet recusandae, perferendis doloribus laudantium fugit possimus? Voluptates temporibus facere odit possimus voluptatum molestiae suscipit reprehenderit, inventore reiciendis?voluptates enim, fugit velit amet omnis quisquam dolores s?</p>
+    </div> -->
+
+    <div class="firstpara">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, obcaecati
+        nesciunt! Dicta eveniet exercitationem nisi omnis laborum eaque ex
+        inventore, delectus facere eligendi obcaecati veritatis esse impedit
+        possimus qui nemo cum repudiandae blanditiis natus vel veniam autem
+        vitae sint? Libero temporibus suscipit repellat ea! Blanditiis culpa
+        labore molestias fuga voluptates, consequatur atque accusantium. Officia
+        aliquam harum obcaecati natus odio eaque libero aspernatur, ex vitae
+        assumenda temporibus. Rem provident amet fuga perferendis nihil
+        obcaecati incidunt exercitationem eaque autem dolorum consectetur eos
+        assumenda illum quos dolore deserunt reiciendis sapiente, ipsa
+        necessitatibus. Reiciendis perferendis rerum aspernatur repudiandae
+        dolorum amet ab necessitatibus suscipit at harum, quo architecto. Sit
+        qui, rerum doloribus molestiae saepe ex obcaecati inventore voluptatibus
+        a quis corporis sint dolorum distinctio illum culpa? Animi, cum.
+      </p>
+    </div>
+  </body>
+</html>

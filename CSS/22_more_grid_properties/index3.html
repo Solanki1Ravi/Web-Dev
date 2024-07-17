@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area Example</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+    
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+            background-color: bisque;
+            display: grid;
+            gap: 1rem;
+            padding: 2rem;
+
+            grid-template-areas: 
+                "header header header header"
+                "smallbox smallbox2 smallbox3 sidebar"
+                "main_content main_content main_content sidebar"
+                "main_content main_content main_content sidebar"
+                "footer footer footer footer"
+            
+            ;
+        }
+
+        .item{
+            border: 2px solid black;
+            background-color: aquamarine;
+            padding: 4rem;
+            color: rgb(13, 96, 221);
+        }
+
+        #header{
+            grid-area:header ;
+        }
+        #smallbox{
+            grid-area: smallbox;
+        }
+        #sidebar{
+            grid-area: sidebar;
+        }
+        #maincontent{
+            grid-area: main_content;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="header">Header</div>
+        <div class="item" id="smallbox">Smallbox</div>
+        <div class="item" id="smallbox2">Smallbox</div>
+        <div class="item" id="smallbox3">Smallbox</div>
+       <div class="item" id="sidebar">Sidebar</div>
+        <div class="item" id="maincontent">MainContent</div>
+        <div class="item" id="footer">Footer</div>
+    </div>
+</body>
+</html>
